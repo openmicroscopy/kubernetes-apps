@@ -19,4 +19,4 @@ shift
 exec docker run -it --rm \
     -v "$KUBECONFIG:/home/kube/.kube/config" \
     -v "$PWD/..:/k8s:ro" -w /k8s/apps \
-    kube-helm-docker "$@"
+    imagedata/kube-helm-docker "$@"
